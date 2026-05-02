@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marvin L Francisco - Full Stack Web Developer Portfolio. Specializing in Laravel, ASP.NET C#, and enterprise systems.">
+    <meta name="keywords" content="Full Stack Developer, Laravel, ASP.NET, C#, Web Developer, PHP, Portfolio">
+    <meta name="author" content="Marvin L Francisco">
+    <title>Marvin L Francisco | Full Stack Web Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23f0820a' rx='8'/><text x='50' y='70' font-size='70' font-weight='900' text-anchor='middle' fill='white' font-family='Arial'>M</text></svg>">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- ======================== PRELOADER ======================== -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-inner"></div>
+            <span class="loader-text">Loading...</span>
+        </div>
+    </div>
+
+    <!-- ======================== NAVBAR ======================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#hero">
+                <span class="text-accent">&lt;</span>MLF<span class="text-accent">/&gt;</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#techstack">Tech Stack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#strengths">Strengths</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================== HERO SECTION ======================== -->
+    <section id="hero" class="min-vh-100 d-flex align-items-center">
+        <div class="hero-bg-animation"></div>
+        <div class="container position-relative z-1">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1000">
+                    <p class="text-accent fw-500 mb-2">Hello, I'm</p>
+                    <h1 class="display-3 fw-800 text-white mb-2">Marvin L Francisco</h1>
+                    <h2 class="h4 text-light mb-3">Full Stack Web Developer</h2>
+                    <p class="lead text-secondary mb-2">"Building scalable systems with Laravel &amp; ASP.NET"</p>
+                    <div class="typing-wrapper mb-4">
+                        <span class="text-accent">&gt; </span>
+                        <span id="typing-text" class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#projects" class="btn btn-accent btn-lg px-4">
+                            <i class="bi bi-folder2-open me-2"></i>View Projects
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg px-4">
+                            <i class="bi bi-download me-2"></i>Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-glow"></div>
+                        <img src="assets/images/profile.png" alt="Marvin L Francisco" class="hero-image" onerror="this.src='https://ui-avatars.com/api/?name=Marvin+Francisco&size=300&background=f0820a&color=fff&bold=true&font-size=0.33'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== ABOUT SECTION ======================== -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="800">
+                    <div class="about-card p-4">
+                        <div class="about-stats d-flex flex-wrap gap-4 mb-4">
+                            <div class="stat-item text-center">
+                                <h3 class="text-accent fw-bold mb-0">5+</h3>
+                                <small class="text-secondary">Years Experience</small>
+                            </div>
+                            <div class="stat-item text-center">
+                                <h3 class="text-accent fw-bold mb-0">20+</h3>
+                                <small class="text-secondary">Projects Completed</small>
+                            </div>
+                            <div class="stat-item text-center">
+                                <h3 class="text-accent fw-bold mb-0">10+</h3>
+                                <small class="text-secondary">Technologies</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800">
+                    <h3 class="text-white mb-3">Full Stack Web Developer</h3>
+                    <p class="text-secondary">
+                        With over <strong class="text-accent">5 years of professional experience</strong>, I specialize in building 
+                        enterprise-grade web applications using <strong class="text-white">Laravel</strong> and 
+                        <strong class="text-white">ASP.NET C#</strong>.
+                    </p>
+                    <p class="text-secondary">
+                        I have extensive experience developing systems for <strong class="text-white">enterprise and government organizations</strong>, 
+                        focusing on clean, optimized, and scalable code that meets complex business requirements.
+                    </p>
+                    <p class="text-secondary">
+                        My expertise spans the full development lifecycle — from database architecture and API design to 
+                        frontend implementation and deployment. I'm passionate about writing maintainable code and 
+                        building systems that scale efficiently.
+                    </p>
+                    <div class="d-flex gap-2 flex-wrap mt-4">
+                        <span class="badge-tech">Enterprise Systems</span>
+                        <span class="badge-tech">Government Projects</span>
+                        <span class="badge-tech">Database Architecture</span>
+                        <span class="badge-tech">API Development</span>
+                        <span class="badge-tech">Clean Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== TECH STACK SECTION ======================== -->
+    <section id="techstack" class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="section-divider"></div>
+                <p class="text-secondary mt-3">Technologies I work with daily</p>
+            </div>
+
+            <!-- Highlighted: ASP.NET & C# -->
+            <div class="row justify-content-center mb-5" data-aos="zoom-in" data-aos-duration="800">
+                <div class="col-lg-8">
+                    <div class="tech-highlight-card p-4 text-center">
+                        <div class="highlight-glow"></div>
+                        <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                            <i class="bi bi-microsoft fs-1 text-accent"></i>
+                            <div>
+                                <h3 class="text-white mb-0 fw-bold">ASP.NET & C#</h3>
+                                <p class="text-accent mb-0 fw-500">Primary Backend Expertise</p>
+                            </div>
+                        </div>
+                        <p class="text-secondary mb-3">
+                            Expert-level proficiency in building enterprise web applications, APIs, and complex systems 
+                            using the .NET ecosystem. Experienced with MVC architecture, Entity Framework, and MSSQL Server.
+                        </p>
+                        <div class="d-flex gap-2 justify-content-center flex-wrap">
+                            <span class="badge-highlight">ASP.NET MVC</span>
+                            <span class="badge-highlight">C#</span>
+                            <span class="badge-highlight">Entity Framework</span>
+                            <span class="badge-highlight">.NET Core</span>
+                            <span class="badge-highlight">MSSQL</span>
+                            <span class="badge-highlight">Crystal Reports</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Categories -->
+            <div class="row g-4">
+                <!-- Frontend -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-card h-100 p-4">
+                        <div class="tech-card-icon mb-3">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <h4 class="text-white mb-3">Frontend</h4>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <span class="badge-tech">HTML5</span>
+                            <span class="badge-tech">CSS3</span>
+                            <span class="badge-tech">JavaScript</span>
+                            <span class="badge-tech">Bootstrap</span>
+                            <span class="badge-tech">jQuery</span>
+                            <span class="badge-tech">Vue.js</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-card h-100 p-4">
+                        <div class="tech-card-icon mb-3">
+                            <i class="bi bi-server"></i>
+                        </div>
+                        <h4 class="text-white mb-3">Backend</h4>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <span class="badge-tech">PHP</span>
+                            <span class="badge-tech">Laravel</span>
+                            <span class="badge-tech">ASP.NET</span>
+                            <span class="badge-tech">C#</span>
+                            <span class="badge-tech">MySQL</span>
+                            <span class="badge-tech">MSSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tech-card h-100 p-4">
+                        <div class="tech-card-icon mb-3">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h4 class="text-white mb-3">Tools & Others</h4>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <span class="badge-tech">Git</span>
+                            <span class="badge-tech">REST APIs</span>
+                            <span class="badge-tech">AJAX</span>
+                            <span class="badge-tech">Crystal Reports</span>
+                            <span class="badge-tech">VS Code</span>
+                            <span class="badge-tech">Visual Studio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== PROJECTS SECTION ======================== -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+                <p class="text-secondary mt-3">Professional & Freelance Work</p>
+            </div>
+
+            <!-- ========== PROFESSIONAL PROJECTS (GOVERNMENT) ========== -->
+            <div class="mb-5">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h3 class="h4 text-accent fw-bold mb-2">
+                        <i class="bi bi-building me-2"></i>Professional Projects
+                    </h3>
+                    <p class="text-secondary small">Government & Enterprise Systems</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Professional 1: BMB KM IS -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card h-100">
+                            <div id="carousel-bmb-km" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-bmb-km" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carousel-bmb-km" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel-bmb-km" data-bs-slide-to="2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/Projects/KMIS/homepage.png" class="d-block w-100 project-img" alt="BMB KM Dashboard" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=BMB+KM+Dashboard'">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/Projects/KMIS/maps.png" class="d-block w-100 project-img" alt="BMB KM Mapping" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=Agency+Mapping'">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-bmb-km" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-bmb-km" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <div class="project-body p-4">
+                                <h5 class="text-white fw-bold mb-2">BMB KM IS</h5>
+                                <p class="text-accent small mb-2">Knowledge Management Information System</p>
+                                <p class="text-secondary small mb-3">
+                                    A comprehensive information system connecting multiple agencies with advanced mapping capabilities. 
+                                    Features inter-agency collaboration, geographic data visualization using Leaflet, and centralized knowledge management.
+                                </p>
+                                <div class="d-flex gap-2 flex-wrap mb-3">
+                                    <span class="badge-tech-sm">Laravel</span>
+                                    <span class="badge-tech-sm">Leaflet</span>
+                                    <span class="badge-tech-sm">MySQL</span>
+                                    <span class="badge-tech-sm">Bootstrap</span>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <!-- <a href="#" class="btn btn-sm btn-accent">
+                                        <i class="bi bi-eye me-1"></i>View Demo
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-outline-light">
+                                        <i class="bi bi-github me-1"></i>View Code
+                                    </a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional 2: BMB CMEMP AGOS -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card h-100">
+                            <div id="carousel-bmb-agos" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-bmb-agos" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carousel-bmb-agos" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel-bmb-agos" data-bs-slide-to="2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/Projects/CMEMP/Homepage.png" class="d-block w-100 project-img" alt="AGOS Dashboard" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=AGOS+Dashboard'">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/Projects/CMEMP/Map.png" class="d-block w-100 project-img" alt="Environmental Mapping" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=Environmental+Data'">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/Projects/CMEMP/dashboard.png" class="d-block w-100 project-img" alt="Species Records" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=Species+Mapping'">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-bmb-agos" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-bmb-agos" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <div class="project-body p-4">
+                                <h5 class="text-white fw-bold mb-2">BMB CMEMP AGOS</h5>
+                                <p class="text-accent small mb-2">Environmental & Species Recording System</p>
+                                <p class="text-secondary small mb-3">
+                                    An environmental monitoring system for recording and mapping aquatic ecosystems, 
+                                    fish populations, and water quality data. Integrates Leaflet for geographic visualization 
+                                    and comprehensive environmental data analytics.
+                                </p>
+                                <div class="d-flex gap-2 flex-wrap mb-3">
+                                    <span class="badge-tech-sm">Laravel</span>
+                                    <span class="badge-tech-sm">Leaflet</span>
+                                    <span class="badge-tech-sm">MySQL</span>
+                                    <span class="badge-tech-sm">jQuery</span>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <!-- <a href="#" class="btn btn-sm btn-accent">
+                                        <i class="bi bi-eye me-1"></i>View Demo
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-outline-light">
+                                        <i class="bi bi-github me-1"></i>View Code
+                                    </a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional 3: PASMIS -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-card h-100">
+                            <div id="carousel-pasmis" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-pasmis" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carousel-pasmis" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel-pasmis" data-bs-slide-to="2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/Projects/PASMIS/dashboard.png" class="d-block w-100 project-img" alt="PASMIS Dashboard" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=PASMIS+Dashboard'">
+                                    </div>
+                                   <div class="carousel-item active">
+                                        <img src="assets/images/Projects/PASMIS/asset.png" class="d-block w-100 project-img" alt="PASMIS Dashboard" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=PASMIS+Dashboard'">
+                                    </div>
+                                   
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pasmis" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-pasmis" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <div class="project-body p-4">
+                                <h5 class="text-white fw-bold mb-2">PASMIS</h5>
+                                <p class="text-accent small mb-2">Procurement, Budget & Asset System</p>
+                                <p class="text-secondary small mb-3">
+                                    Comprehensive procurement and supply management system with budget tracking, asset masterlist, 
+                                    and inventory management. Features automated workflows, approval processes, and extensive 
+                                    reporting for government procurement operations.
+                                </p>
+                                <div class="d-flex gap-2 flex-wrap mb-3">
+                                    <span class="badge-tech-sm">Laravel</span>
+                                    <span class="badge-tech-sm">MySQL</span>
+                                    <span class="badge-tech-sm">Bootstrap</span>
+                                    <span class="badge-tech-sm">jQuery</span>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <!-- <a href="#" class="btn btn-sm btn-accent">
+                                        <i class="bi bi-eye me-1"></i>View Demo
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-outline-light">
+                                        <i class="bi bi-github me-1"></i>View Code
+                                    </a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional 4: Library Management System (HIGHLIGHTED) -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-card h-100 project-highlighted">
+                            <div class="project-badge">
+                                <i class="bi bi-star-fill me-1"></i>Featured
+                            </div>
+                            <div id="carousel-library" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-library" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carousel-library" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel-library" data-bs-slide-to="2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/Projects/LIBRARY/login.png" class="d-block w-100 project-img" alt="Library Dashboard" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=Library+System+Dashboard'">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/Projects/LIBRARY/dashboard.png" class="d-block w-100 project-img" alt="Library Dashboard" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=Library+System+Dashboard'">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-library" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-library" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <div class="project-body p-4">
+                                <h5 class="text-white fw-bold mb-2">Library Management System</h5>
+                                <p class="text-accent small mb-2 fw-bold">
+                                    <i class="bi bi-microsoft me-1"></i>Built with ASP.NET C#
+                                </p>
+                                <p class="text-secondary small mb-3">
+                                    Enterprise-grade library management platform built with ASP.NET MVC and C#. 
+                                    Features book cataloging, member management, borrowing/returning workflow, 
+                                    fine calculation, reservation system, and Crystal Reports integration.
+                                </p>
+                                <div class="d-flex gap-2 flex-wrap mb-3">
+                                    <span class="badge-highlight-sm">ASP.NET MVC</span>
+                                    <span class="badge-highlight-sm">C#</span>
+                                    <span class="badge-highlight-sm">MSSQL</span>
+                                    <span class="badge-tech-sm">Crystal Reports</span>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <!-- <a href="#" class="btn btn-sm btn-accent">
+                                        <i class="bi bi-eye me-1"></i>View Demo
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-outline-light">
+                                        <i class="bi bi-github me-1"></i>View Code
+                                    </a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== FREELANCE PROJECTS ========== -->
+            <div class="mt-5 pt-5 border-top border-secondary">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h3 class="h4 text-accent fw-bold mb-2">
+                        <i class="bi bi-briefcase me-2"></i>Freelance Projects
+                    </h3>
+                    <p class="text-secondary small">Client & Startup Work</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Freelance 1: Virtual Assistant Website -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card h-100">
+                            <div id="carousel-va" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-va" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carousel-va" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel-va" data-bs-slide-to="2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/Projects/BEYOND/homepage.png" class="d-block w-100 project-img" alt="VA Website" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=VA+Website'">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/Projects/BEYOND/login.png" class="d-block w-100 project-img" alt="VA Services" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=Services+Page'">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-va" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-va" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <div class="project-body p-4">
+                                <h5 class="text-white fw-bold mb-2">Virtual Assistant Website</h5>
+                                <p class="text-accent small mb-2">Service Portfolio & Booking Platform</p>
+                                <p class="text-secondary small mb-3">
+                                    A professional virtual assistant service website featuring service portfolio, 
+                                    client testimonials, and booking capabilities. Designed for online visibility 
+                                    and client acquisition in the virtual assistance industry.
+                                </p>
+                                <div class="d-flex gap-2 flex-wrap mb-3">
+                                    <span class="badge-tech-sm">Laravel</span>
+                                    <span class="badge-tech-sm">Bootstrap</span>
+                                    <span class="badge-tech-sm">JavaScript</span>
+                                    <span class="badge-tech-sm">MySQL</span>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <!-- <a href="#" class="btn btn-sm btn-accent">
+                                        <i class="bi bi-eye me-1"></i>View Demo
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-outline-light">
+                                        <i class="bi bi-github me-1"></i>View Code
+                                    </a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Freelance 2: Recruitment Portal -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card h-100">
+                            <div id="carousel-recruitment" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-recruitment" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carousel-recruitment" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel-recruitment" data-bs-slide-to="2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/Projects/UCONNECT/dashboard.png" class="d-block w-100 project-img" alt="Recruitment Portal" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=Recruitment+Portal'">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/Projects/UCONNECT/login.png" class="d-block w-100 project-img" alt="Job Listings" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=Job+Listings'">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-recruitment" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-recruitment" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <div class="project-body p-4">
+                                <h5 class="text-white fw-bold mb-2">Recruitment Portal</h5>
+                                <p class="text-accent small mb-2">Job Management & Application System</p>
+                                <p class="text-secondary small mb-3">
+                                    Comprehensive recruitment platform for job posting, applicant tracking, 
+                                    and candidate management. Streamlines the hiring process with automated 
+                                    notifications, resume parsing, and candidate evaluation tools.
+                                </p>
+                                <div class="d-flex gap-2 flex-wrap mb-3">
+                                    <span class="badge-tech-sm">Laravel</span>
+                                    <span class="badge-tech-sm">Vue.js</span>
+                                    <span class="badge-tech-sm">MySQL</span>
+                                    <span class="badge-tech-sm">REST API</span>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <!-- <a href="#" class="btn btn-sm btn-accent">
+                                        <i class="bi bi-eye me-1"></i>View Demo
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-outline-light">
+                                        <i class="bi bi-github me-1"></i>View Code
+                                    </a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Freelance 3: Bangkok Pratu -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-card h-100">
+                            <div id="carousel-bangkok" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-bangkok" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carousel-bangkok" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel-bangkok" data-bs-slide-to="2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/Projects/BANGKOK/dashboard.png" class="d-block w-100 project-img" alt="Bangkok Pratu Dashboard" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=Bangkok+Pratu'">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/Projects/BANGKOK/homepage.png" class="d-block w-100 project-img" alt="Order Management" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=Order+Management'">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/Projects/BANGKOK/login.png" class="d-block w-100 project-img" alt="Shipping Tracking" onerror="this.src='https://placehold.co/600x400/1a1a2e/f0820a?text=Shipping+Tracking'">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-bangkok" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-bangkok" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <div class="project-body p-4">
+                                <h5 class="text-white fw-bold mb-2">Bangkok Pratu</h5>
+                                <p class="text-accent small mb-2">Order & Shipping Management System</p>
+                                <p class="text-secondary small mb-3">
+                                    E-commerce order management and shipping logistics platform. Features real-time order tracking, 
+                                    automated shipping assignment, inventory synchronization, and customer shipment notifications 
+                                    for seamless order fulfillment.
+                                </p>
+                                <div class="d-flex gap-2 flex-wrap mb-3">
+                                    <span class="badge-tech-sm">Laravel</span>
+                                    <span class="badge-tech-sm">MySQL</span>
+                                    <span class="badge-tech-sm">Bootstrap</span>
+                                    <span class="badge-tech-sm">jQuery</span>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <!-- <a href="#" class="btn btn-sm btn-accent">
+                                        <i class="bi bi-eye me-1"></i>View Demo
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-outline-light">
+                                        <i class="bi bi-github me-1"></i>View Code
+                                    </a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== EXPERIENCE SECTION ======================== -->
+    <section id="experience" class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Experience</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item" data-aos="fade-right" data-aos-duration="800">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-card p-4">
+                            <span class="timeline-date">Present</span>
+                            <h4 class="text-white fw-bold mb-1">Full Stack Web Developer</h4>
+                            <h6 class="text-accent mb-3">Philippine Statistical Authority</h6>
+                            <ul class="text-secondary small mb-0">
+                                <li>Develop and maintain enterprise-level web applications</li>
+                                <li>Build procurement, inventory, and management systems</li>
+                                <li>Work with Laravel, ASP.NET C#, and database optimization</li>
+                                <li>Implement reporting solutions using Crystal Reports</li>
+                                <li>Collaborate with cross-functional teams on government projects</li>
+                            </ul>
+                            <div class="d-flex gap-2 flex-wrap mt-3">
+                                <span class="badge-tech-sm">Laravel</span>
+                                <span class="badge-tech-sm">ASP.NET</span>
+                                <span class="badge-tech-sm">C#</span>
+                                <span class="badge-tech-sm">MSSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item" data-aos="fade-left" data-aos-duration="800">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-card p-4">
+                            <span class="timeline-date">Previous</span>
+                            <h4 class="text-white fw-bold mb-1">PHP Developer</h4>
+                            <h6 class="text-accent mb-3">Mybusybee Inc</h6>
+                            <ul class="text-secondary small mb-0">
+                                <li>Developed and maintained PHP-based web applications</li>
+                                <li>Built RESTful APIs and integrated third-party services</li>
+                                <li>Implemented responsive frontend interfaces</li>
+                                <li>Optimized database queries and application performance</li>
+                                <li>Collaborated in agile development workflows</li>
+                            </ul>
+                            <div class="d-flex gap-2 flex-wrap mt-3">
+                                <span class="badge-tech-sm">PHP</span>
+                                <span class="badge-tech-sm">Laravel</span>
+                                <span class="badge-tech-sm">MySQL</span>
+                                <span class="badge-tech-sm">jQuery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== STRENGTHS SECTION ======================== -->
+    <section id="strengths" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Key Strengths</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="strength-card text-center p-4 h-100">
+                        <div class="strength-icon mb-3">
+                            <i class="bi bi-puzzle"></i>
+                        </div>
+                        <h5 class="text-white fw-bold">Problem Solving</h5>
+                        <p class="text-secondary small mb-0">
+                            Analytical approach to complex challenges with creative solutions for enterprise requirements.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="strength-card text-center p-4 h-100">
+                        <div class="strength-icon mb-3">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+                        <h5 class="text-white fw-bold">Works Under Pressure</h5>
+                        <p class="text-secondary small mb-0">
+                            Consistently delivers quality output under tight deadlines and demanding project timelines.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="strength-card text-center p-4 h-100">
+                        <div class="strength-icon mb-3">
+                            <i class="bi bi-layers"></i>
+                        </div>
+                        <h5 class="text-white fw-bold">Multi-System Handling</h5>
+                        <p class="text-secondary small mb-0">
+                            Capable of managing and maintaining multiple systems simultaneously without compromising quality.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="strength-card text-center p-4 h-100">
+                        <div class="strength-icon mb-3">
+                            <i class="bi bi-rocket-takeoff"></i>
+                        </div>
+                        <h5 class="text-white fw-bold">Fast Learner</h5>
+                        <p class="text-secondary small mb-0">
+                            Quick to adopt new technologies, frameworks, and tools to stay current with industry trends.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="strength-card text-center p-4 h-100">
+                        <div class="strength-icon mb-3">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h5 class="text-white fw-bold">Clean Coding Practices</h5>
+                        <p class="text-secondary small mb-0">
+                            Writes maintainable, well-documented, and optimized code following industry best practices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== CONTACT SECTION ======================== -->
+    <section id="contact" class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+                <p class="text-secondary mt-3">Let's discuss your next project</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Contact Info -->
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800">
+                    <div class="contact-info-card p-4 h-100">
+                        <h4 class="text-white mb-4">Contact Information</h4>
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <div>
+                                <small class="text-secondary d-block">Phone</small>
+                                <span class="text-white">09124119092</span>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div>
+                                <small class="text-secondary d-block">Email</small>
+                                <span class="text-white">krit.marv@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div>
+                                <small class="text-secondary d-block">Location</small>
+                                <span class="text-white">Philippines</span>
+                            </div>
+                        </div>
+                        <hr class="border-secondary">
+                        <div class="d-flex gap-3 mt-4 text-center justify-content-center">
+                            <a href="https://github.com/marvinkrit" class="social-link" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/marvin-francisco-786122298/" class="social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.facebook.com/luna.francisco1/" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="footer-section py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="text-secondary mb-0">
+                        &copy; 2026 <span class="text-accent">Marvin L Francisco</span>. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-end">
+                        <a href="https://github.com/marvinkrit" class="footer-link" aria-label="GitHub"><i class="bi bi-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/marvin-francisco-786122298/" class="footer-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================== SCROLL TO TOP ======================== -->
+    <button id="scrollToTop" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- ======================== SCRIPTS ======================== -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
